@@ -4,9 +4,9 @@ import openai
 import discord
 import os
 
-openai.api_key = open('./openai-api-key.txt').read()
+openai.api_key = '' # openai API key <<< Sign up for open and enter API key
 
-TOKEN = '' #discord bot token
+TOKEN = '' #discord bot token <<<< discord bot token here
 
 client = discord.Client()
 count = 0
@@ -20,8 +20,8 @@ frequency_penalty = 1.75
 presence_penalty = 1.23
 promptbackup = ''
 
-file = 'GPT3.py' #name if this file
-discordchannel = 'discordbot' #name of discord channel
+file = 'DiscordBot.py' #name if this file
+discordchannel = 'discordbot' #name of discord channel <<<< Change this to the nameo of the channel you want to bot to interact with
 
 def word_count(string):
     return (len(string.strip().split(" ")))
